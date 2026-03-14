@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int missnum(int arr[], int n) {
     int expsum = n * (n + 1) / 2;
     int actsum = 0;
@@ -12,6 +11,6 @@ int missnum(int arr[], int n) {
 int main() {
     int arr[] = {3, 0, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Missed: %d", missnum(arr, n));
+    printf("Missed: %d\n", missnum(arr, n));
     return 0;
 }
