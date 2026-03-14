@@ -13,7 +13,7 @@ void fizzBuzz(int n) {
             printf("Buzz\n");
         }
         else {
-            printf("%d\n", i);
+            printf("%d", i);
         }
 
     }
