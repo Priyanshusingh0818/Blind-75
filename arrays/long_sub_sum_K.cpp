@@ -10,11 +10,12 @@ using namespace std;
 int longestSubarray(vector<int>& arr, int k) {
     
     unordered_map<int,int> mp;
+    int n = arr.size();
     
     int sum = 0;
     int maxLen = 0;
 
-    for(int i = 0; i < arr.size(); i++) {
+    for(int i = 0; i < n; i++) {
         
         sum += arr[i];
 

@@ -8,7 +8,8 @@ class Solution {
 public:
     int secondLargest(vector<int> &a, int n) {
 
-        if(n < 2) return -1;
+        if(n < 2) 
+        return -1;
 
         int largest = a[0];
         int slargest = INT_MIN;
