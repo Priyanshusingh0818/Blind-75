@@ -6,7 +6,7 @@ int gcd(int a, int b){
         a=b;
         b=rem;
     }
-    return 0;
+    return a;
 }
 int main(){
     cout << gcd(48,18);
