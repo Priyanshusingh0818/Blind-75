@@ -1,25 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int n;
-    cin>>n;
+class Solution {
+public:
+    int countDuplicates(vector<int>& arr) {
 
-    unordered_map<int,int> mp;
-    int count =0;
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    for(int i=0;i<n;i++){
-        mp[arr[i]]++;
-    }
-    for(int i=0;i<n;i++){
-        if(mp[arr[i]]>1){
-            count++;
+        unordered_map<int, int> mp;
 
-            mp[arr[i]] =0;
+        int count = 0;
+
+        // Store frequency
+        for (int i = 0; i < arr.size(); i++) {
+            mp[arr[i]]++;
         }
-    }
-    cout<<count;
 
-    return 0;}
+        // Count distinct duplicate elements
+        for (int i = 0; i < arr.size(); i++) {
+
+            if (mp[arr[i]] > 1) {
+                count++;
+                mp[arr[i]] = 0;
+            }
+
+        }
+
+        return count;
+    }
+};
