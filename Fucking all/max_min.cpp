@@ -13,7 +13,7 @@ pair<int, int> findMaxMin(vector<int>& nums) {
         if (nums[i] > maximum) {
             maximum = nums[i];
         }
-
+ 
         if (nums[i] < minimum) {
             minimum = nums[i];
         }
