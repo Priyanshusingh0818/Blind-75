@@ -41,8 +41,6 @@ def rotate(arr):
 
 
 
-
-
     def rotate(arr):
         n = len(arr)
         if n == 0:

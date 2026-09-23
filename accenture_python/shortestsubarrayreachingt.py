@@ -3,8 +3,8 @@ def min_length_sum(arr, target):
     total = 0
     best = len(arr) + 1
 
-    for right, x in enumerate(arr):
-        total += x
+    for right in range(len(arr)):
+        total += arr[right]
 
         while total >= target:
             best = min(best, right - left + 1)

@@ -10,7 +10,14 @@ def max_subarray(arr):
     return best
 
 
-
+def max(arr):
+    if not arr:
+        raise ValueError('non')
+    current = best=arr[0]
+    for i in range(1,len(arr)):
+        current=max(arr[i],current+arr[i])
+        best= max(current,best)
+    return best
 
 
 def max(arr):
